@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1107 &-3674122609077788687
+--- !u!1107 &-6242645730584607878
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -10,20 +10,14 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 2177051533166103009}
-    m_Position: {x: 570, y: 80, z: 0}
+    m_State: {fileID: 7854420972123303059}
+    m_Position: {x: 530, y: 160, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6293371947960601871}
-    m_Position: {x: 560, y: 160, z: 0}
+    m_State: {fileID: 2946747686362221193}
+    m_Position: {x: 530, y: 220, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2247075814193012196}
-    m_Position: {x: 580, y: 240, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 8171238740824214002}
-    m_Position: {x: 440, y: -10, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 2609653461234522402}
-    m_Position: {x: 720, y: -10, z: 0}
+    m_State: {fileID: 2222698647234856121}
+    m_Position: {x: 270, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -33,46 +27,20 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 8171238740824214002}
---- !u!1102 &-2247075814193012196
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Twist
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: b90ac265fadeb6b4583c72f5b5643484, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_DefaultState: {fileID: 2222698647234856121}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HipHop
+  m_Name: Button
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: -3674122609077788687}
+    m_StateMachine: {fileID: -6242645730584607878}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -82,14 +50,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &2177051533166103009
+--- !u!1102 &2222698647234856121
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HipHop
+  m_Name: ButtonHidden
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -102,20 +70,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: f84f66a528647cd499f6d41dae3e56ca, type: 3}
+  m_Motion: {fileID: 7400000, guid: 438e5814ad3d7fb48bf8aff846a71647, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &2609653461234522402
+--- !u!1102 &2946747686362221193
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ready
+  m_Name: ButtonDisappear
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -128,20 +96,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: bf96ce72497e4ac4aad3d20930dff531, type: 3}
+  m_Motion: {fileID: 7400000, guid: 98d991e5d7d5a5f45a7eab45f32281c9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &6293371947960601871
+--- !u!1102 &7854420972123303059
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shuffling
+  m_Name: ButtonAppear
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -154,33 +122,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 60ca9eb3a3c43bf40ad412d88126e5f2, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &8171238740824214002
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SadIdle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: ba096aad496098e4a96bae00e9e93657, type: 3}
+  m_Motion: {fileID: 7400000, guid: 6dc22c5bbef05eb4a8084fceb8423248, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
