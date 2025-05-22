@@ -22,7 +22,7 @@ public class SoundManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
-        audioS = GetComponent<AudioSource>();
+        
         audioDictionary = new Dictionary<string,AudioClip>();
         foreach(string key in audioList){
             AudioClip audio = Resources.Load<AudioClip>("Audio/" + audioPrefix + key); 
@@ -34,7 +34,8 @@ public class SoundManager : MonoBehaviour
         
         if (!audioDictionary.ContainsKey(soundname)) {
             Debug.LogWarning("SoundManager: Tried to play undefined sound: " + soundname);
-        }else{
+        }else
+        {
             audioS.pitch = pitch;
             audioS.volume = volume;
             audioS.PlayOneShot(audioDictionary[soundname],volume);
