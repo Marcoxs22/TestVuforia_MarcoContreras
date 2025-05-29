@@ -15,4 +15,4 @@ MonoBehaviour:
   musicName: TheTwist
   animationName: Twist
   notesConfig: {fileID: 4900000, guid: 538e23603ce224f4d9dd7954b5dc2424, type: 3}
-  speed: 0
+  speed: 100
