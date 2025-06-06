@@ -14,7 +14,7 @@ AnimatorStateMachine:
     m_Position: {x: 260, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8523184027600412752}
-    m_Position: {x: 320, y: 100, z: 0}
+    m_Position: {x: 370, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3337582566392382711}
     m_Position: {x: 210, y: 210, z: 0}
@@ -83,7 +83,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HIdeResultsScreen
+  m_Name: HideResultsScreen
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
